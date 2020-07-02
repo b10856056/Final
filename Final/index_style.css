@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Microsoft JhengHei;
+}
+
+.about .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.about .text {
+    font-size: 24px;
+    text-align: center;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+.pictures {
+    margin: 0;
+    padding: 0 0 0 10%;
+}
+
+.pictures img {
+    width: 100%;
+}
+
+.pictures figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.pictures img {
+    width: 100%;
+}
+
+#menu_control {
+    position: absolute;
+    z-index: -2;
+    opacity: 0;
+}
+
+.header {
+    height: 50px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.menu_btn {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.menu_btn span {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.menu_btn::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 2px;
+    width: 36px;
+    background-color: #aaa;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 8px 0px #aaa, 0px -8px 0px #aaa, 0px 16px 0px;
+}
+
+nav {
+    width: 80%;
+    height: calc(100vh-50px);
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: yellow;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+}
+
+#menu_control:checked~.header nav {
+    left: 0;
+}
+
+.footer {
+    background-color: black;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 12px;
+    color: yellow;
+}
+
+.item-group {
+    display: flex;
+}
+
+.item-group .item .img {
+    width: 100%;
+}
+
+.col-s-0 {
+    width: 0%;
+}
+
+.col-s-1 {
+    width: 8.33%;
+}
+
+.col-s-1_5 {
+    width: 12.5%;
+}
+
+.col-s-2 {
+    width: 16.66%;
+}
+
+.col-s-3 {
+    width: 25%;
+}
+
+.col-s-4 {
+    width: 33.33%;
+}
+
+.col-s-5 {
+    width: 41.66%;
+}
+
+.col-s-6 {
+    width: 50%;
+}
+
+.col-s-7 {
+    width: 58.33%;
+}
+
+.col-s-8 {
+    width: 66.66%;
+}
+
+.col-s-9 {
+    width: 75%;
+}
+
+.col-s-10 {
+    width: 83.33%;
+}
+
+.col-s-11 {
+    width: 91.66%;
+}
+
+.col-s-12 {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .pictures {
+        margin: 0;
+        padding: 0;
+    }
+    .menu_btn {
+        display: none;
+    }
+    .logo a {
+        display: block;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: red;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        position: relative;
+        left: 0;
+        width: auto;
+        height: auto;
+        top: 0;
+        background-color: transparent;
+    }
+    nav a {
+        border-bottom: none;
+    }
+    .col-0 {
+        width: 0%;
+    }
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-1_5 {
+        width: 12.5%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
